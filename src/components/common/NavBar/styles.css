@@ -1,0 +1,49 @@
+nav {
+    padding-inline: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: transparent;
+    height: 80px;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 7px 10px 15px -15px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.navLink {
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    font-weight: 500;
+}
+
+.socialMediaContainer {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+a {
+    color: black;
+    cursor: pointer;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    transform: scale(1.1);
+    transition: all 0.2s;
+    font-size: 14px;
+}

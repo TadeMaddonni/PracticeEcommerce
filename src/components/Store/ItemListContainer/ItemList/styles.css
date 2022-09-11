@@ -1,0 +1,11 @@
+.itemList{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.storeTitle{
+    padding-left: 10px;
+    text-decoration:line-through;
+    grid-column: 1/4;
+}

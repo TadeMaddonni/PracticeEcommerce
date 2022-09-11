@@ -1,0 +1,34 @@
+.heroContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.heroTitle {
+    margin-top: 20px;
+    font-size: 77px;
+    font-weight: 900;
+}
+
+.heroTextContainer{
+    display: flex;
+    align-items: center;
+}
+
+p {
+    font-size: 24px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.heroSale{
+    margin-left: 10px;
+    font-size: 32px;
+    font-weight: 900;
+    color: red;
+    text-decoration: dashed;
+    text-decoration: line-through;
+}

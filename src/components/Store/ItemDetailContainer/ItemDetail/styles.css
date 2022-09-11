@@ -1,0 +1,44 @@
+.itemDetailCard{
+    margin: auto;
+    margin-top: 50px;
+    max-width: 800px;
+    display: flex;
+    gap: 40px;
+    padding-inline: 50px;
+}
+
+.itemDetailCard > div > img{
+    width: 240px;
+    height: 270px;
+}
+
+.itemDetailName{
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.itemDetailPrice{
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.itemDetailDesc{
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: 400;
+}
+
+.itemDetailInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btnDetailComprar{
+    width: 100px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
