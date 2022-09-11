@@ -5,7 +5,7 @@ import AddOneMore from "../CartAddOneMoreBtn";
 import RestOne from "../CartRestOneBtn";
 
 const CartItem = ({ item, removeItem, addOneMore, restOne }) => {
-    const itemTitle = item.title.split(" ").slice(0,4).join(' ')
+    const itemTitle = item.title.split(" ").slice(0, 4).join(" ");
     return (
         <div className="cartItem">
             <div className="productContainer">
@@ -25,7 +25,7 @@ const CartItem = ({ item, removeItem, addOneMore, restOne }) => {
                 <button
                     className="cartQuantityBtn"
                     onClick={() => {
-                        restOne(item.id);
+                        restOne(item.id, item.quantity);
                     }}
                 >
                     <RestOne />

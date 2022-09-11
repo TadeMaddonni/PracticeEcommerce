@@ -63,32 +63,32 @@ const CartContextProvider = ({ children }) => {
         setCartList((prevState) => {
             return prevState.map((el) => {
                 return el.id === itemId
-                    ? {
-                          ...el,
-                          quantity: el.quantity + 1,
-                      }
+                    ?   {
+                            ...el,
+                            quantity: el.quantity + 1,
+                        }
                     : el;
             });
         });
     };
 
-    const restOne = (itemId) => {
-        setCartList((prevState) => {
-            return prevState.map((el) => {
-                if (el.id === itemId) {
-                    if (el.quantity === 1) {
-                        removeItem(itemId);
-                    } else {
+    const restOne = (itemId, qty) => {
+        if (qty === 1) {
+            removeItem(itemId);
+        } else {
+            setCartList((prevState) => {
+                return prevState.map((el) => {
+                    if (el.id === itemId) {
                         return {
                             ...el,
                             quantity: el.quantity - 1,
                         };
+                    } else {
+                        return el;
                     }
-                } else {
-                    return el;
-                }
+                });
             });
-        });
+        }
     };
 
     const removeItem = (itemId) => {

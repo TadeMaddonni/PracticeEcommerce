@@ -19,8 +19,6 @@ const Cart = () => {
         );
     });
 
-    console.log(test.clearCart);
-
     return (
         <div className="cart">
             <h1 className="cartTitle">Cart!</h1>
