@@ -8,6 +8,8 @@ import Footer from "./components/common/Footer";
 import ItemDetailContainer from "./components/Store/ItemDetailContainer";
 import CartContextProvider from "./context/CartContext";
 import Cart from "./pages/Cart";
+import Contact from "./pages/Contact";
+import Aboutus from "./pages/About";
 
 const App = () => {
     return (
@@ -17,8 +19,8 @@ const App = () => {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/store" element={<Store />} />
-                    <Route path="/about" />
-                    <Route path="/contact" />
+                    <Route path="/about" element={<Aboutus />} />
+                    <Route path="/contact" element={<Contact />}/>
                     <Route
                         path="/detail/:id"
                         element={<ItemDetailContainer />}

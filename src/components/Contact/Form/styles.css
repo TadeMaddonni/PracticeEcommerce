@@ -1,0 +1,38 @@
+.formContainer{
+    margin: auto;
+    width: 100%;
+    min-height: 500px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form{
+    padding: 80px 150px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.formInput{
+    min-width: 300px;
+    padding: 10px;
+    text-indent: 10px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formInput::placeholder{
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.formBtn{
+    padding: 10px 30px;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: white;
+}

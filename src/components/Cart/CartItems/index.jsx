@@ -33,7 +33,7 @@ const CartItem = ({ item, removeItem, addOneMore, restOne }) => {
             </div>
             <div className="priceContainer">
                 <span className="cartItemPrice">
-                    ${item.price * item.quantity}
+                    ${Math.round(item.price * item.quantity)}
                 </span>
             </div>
             <div className="deleteContainer">
@@ -46,5 +46,4 @@ const CartItem = ({ item, removeItem, addOneMore, restOne }) => {
         </div>
     );
 };
-
 export default CartItem;

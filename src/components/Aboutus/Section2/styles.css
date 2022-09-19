@@ -1,0 +1,16 @@
+.aboutUsBtn {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+.sectionTwoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}

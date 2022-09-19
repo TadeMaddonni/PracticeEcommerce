@@ -42,8 +42,4 @@ a {
 a:visited {
     color: black;
 }
-a:hover {
-    transform: scale(1.1);
-    transition: all 0.2s;
-    font-size: 14px;
-}
+

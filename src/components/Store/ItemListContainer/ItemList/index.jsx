@@ -20,7 +20,7 @@ const ItemList = (props) => {
     return (
         <div className="itemList">
             <h2 className="heroTitle storeTitle">Store!</h2>
-            {props.items ? itemElements : <p>Cargando</p>}
+            {itemElements ? itemElements : <p>Cargando</p>}
         </div>
     );
 };

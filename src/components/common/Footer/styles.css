@@ -17,6 +17,7 @@ footer{
 .socialMediaFooterContainer{
     display: flex;
     align-items: center;
+    gap: 10px;
 }
 .socialMediaAdd{
     font-size: 12px;
