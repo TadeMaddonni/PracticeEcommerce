@@ -111,6 +111,12 @@ const CartContextProvider = ({ children }) => {
 
     const TotalPrice = totalPrice();
 
+    const totalItems = () => {
+        return cartList.reduce((totalItems, currentItem) => totalItems + currentItem.quantity, 0);
+    }
+
+    const TotalItems = totalItems(); 
+
     return (
         <CartContext.Provider
             value={{
@@ -121,6 +127,7 @@ const CartContextProvider = ({ children }) => {
                 addOneMore,
                 restOne,
                 TotalPrice,
+                TotalItems,
             }}
         >
             {children}
